@@ -1,0 +1,189 @@
+body{
+  font-family: 'Karla', sans-serif;
+  font-size: 12px;
+  
+
+  --background-color: rgb(255, 255, 255);
+    --text-color: #202020;
+    --light-color: #707070;
+    
+
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 2s;
+    transition: color 0.3s;
+}
+
+p{
+  font-size: 16px;
+  padding: 8px 0px;
+  margin: 0;
+}
+a{
+  text-decoration: none;
+  color: #202020;
+}
+
+img{
+  width: 100%;
+}
+
+.background{
+  
+  height: 250px;
+  object-fit: cover;
+  border-radius: 2px;
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+}
+
+.right-side{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.shadow{
+  box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+.rapa{
+  font-size: 25px;
+  color: var(--text-color);
+  text-decoration: none;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.software {
+  font-size: 13px;
+  color: var(--light-color);
+  padding: 3px 0;
+}
+
+.focused{
+  padding: 16px 256px;
+}
+
+.sites{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.preview{
+  width: 300px;
+}
+
+.list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.list div{
+  margin: 18px;
+  padding: 32px;
+}
+
+.split-end{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.social{
+  width: 120px;
+}
+
+.project{
+  border: 1px solid var(--background-color);
+  border-radius: 2px;
+}
+
+.project:hover{
+  border: 1px solid #dadada;
+}
+
+.shadow-button{
+  box-shadow: 0 8px 6px -6px #707070;
+  border-radius: 2px;
+  padding: 5px 10px;
+  margin: 10px 0;
+  background: white;
+  width: min-content;
+  min-width: 120px;
+  border: 1px solid rgb(180, 180, 180);
+  transition: all .1s ease-in-out;
+}
+
+.shadow-button:hover{
+  box-shadow: 0 8px 6px -6px #202020;
+  transform: scale(1.05);
+}
+
+.cv {
+  width: 100%;
+  height: 50vh;
+  border: unset;
+  border-top: 1px dotted #707070;
+  border-bottom: 1px dotted #707070;
+}
+
+.mobile-only{
+  display: none;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@media (max-width: 787px){
+
+  .list {
+    flex-direction: column;
+  }
+
+  .focused{
+    padding: 8px;
+  }
+
+  .list div{
+    padding: 0;
+  }
+
+  .preview{
+    width: 100%;
+  }
+
+  .project{
+    padding: 6px;
+  }
+
+  .cv {
+    display: none;
+  }
+
+  .mobile-only{
+    display: block;
+  }
+}
+
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
