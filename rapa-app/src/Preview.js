@@ -1,5 +1,4 @@
 import React from 'react';
-import ns from './nemesys_preview.png';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import './App.css';
@@ -11,7 +10,7 @@ function App() {
 
       <div className="side-info"><br />
             <div className="flex-center">
-              <img className="preview" src={ns}/>
+              <img className="preview" src=""/>
               <div>
                 <p>Nemesys</p>
                  <p className="software">Reporting software</p>
@@ -19,9 +18,6 @@ function App() {
               </div>
             </div>
             
-            
-
-           
 
             <p>Technologies</p>
             <ul>

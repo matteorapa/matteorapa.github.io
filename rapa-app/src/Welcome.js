@@ -1,9 +1,9 @@
 import React from 'react';
-import br from './bon_rapetit_preview.png';
-import ns from './nemesys_preview.png';
-import mv from './myvault_preview_white.png';
-import mvb from './myvault_preview.png';
-import  cv from './MatteoRapa_CV.pdf'
+import bonrapetit from './assets/bon_rapetit_preview.png';
+import nemesys from './assets/nemesys_preview.png';
+import myvault from './assets/myvault_preview_white.png';
+import myvaultb from './assets/myvault_preview.png';
+import cv from './assets/MatteoRapa_CV.pdf'
 import './App.css';
 
 function Welcome() {
@@ -14,13 +14,13 @@ function Welcome() {
         <div className="list">
           <a href="https://developer.matteorapa.com/projects/bonrapetit/" target="_blank">
             <div className="project">
-                <img className="preview" src={br}/>
+                <img className="preview" src={bonrapetit}/>
                 <p>Bonrapetit</p>
                 <p className="software">Restaurateur website</p>
              </div>
           </a>
           <div className="project">
-            <img className="preview" src={ns}/>
+            <img className="preview" src={nemesys}/>
             <p>Nemesys</p>
             <p className="software">Reporting software</p>
           </div>
@@ -29,14 +29,14 @@ function Welcome() {
         <a href="https://myvault.technology" target="_blank">
               <div className="list project">
                 <div>
-                  <img className="preview" src={mv}/>
+                  <img className="preview" src={myvault}/>
                   <p>MyVault</p>
                   <p className="software">Expense tracker</p>
                 </div>
 
               
               <div>
-                <img className="preview" src={mvb}/>
+                <img className="preview" src={myvaultb}/>
               </div>
             
             </div>
