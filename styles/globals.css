@@ -1,0 +1,238 @@
+:root {
+  --pad-sides: 256px;
+  --dark-lighter: rgb(26 28 39);
+  --dark-opacity: rgba(26, 28, 39, 0.85);
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: #000000;
+  color: rgb(241, 241, 241);
+  -webkit-font-smoothing: antialiased;
+  font-size: 18px;
+}
+
+h2 {
+  font-size: 4.0625vw;
+  letter-spacing: -0.15625vw;
+  line-height: 3.90625vw;
+  font-weight: normal;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Inter", sans-serif;
+}
+
+header{
+  background-color: var(--dark-opacity);
+  padding: 2px var(--pad-sides);
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}
+
+header h1{
+  font-size: 24px;
+}
+
+section.lg {
+  min-height: 80vh;
+  padding: 128px var(--pad-sides);
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #fffefbd4;;
+  padding: 32px;
+}
+
+.split {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.divide{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 128px 0;
+}
+
+.divide img {
+  width: 100%;
+  max-width: 100%;
+  border: 2px solid var(--dark-opacity);
+}
+
+.divide h3{
+  font-size: 48px;
+  padding: 64px;
+}
+
+.heading{
+  padding-left: var(--pad-sides);
+}
+
+.container {
+  padding: 36px 72px;
+  background-color: var(--dark-lighter);
+  box-shadow: 0px 0px 8px 2px #191a27;
+  -moz-border-radius: 16px;
+  border-radius: 16px;
+}
+
+footer {
+  padding: 36px var(--pad-sides);
+  background-color: var(--dark-lighter);
+}
+
+
+.lang{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: 16px;
+}
+
+.lang div {
+  padding: 0 32px;
+}
+
+.lang h3{
+  margin: 0;
+}
+
+.lang img{
+  height: 32px;
+}
+
+small{
+  font-size: 13px;
+  color: antiquewhite;
+  font-family: monospace;
+}
+
+code{
+  padding: 16px;
+  color: cornflowerblue;
+}
+
+
+
+.split img {
+  height: 50vh;
+  max-width: 100%;
+}
+
+.list div {
+  margin: 18px;
+  padding: 32px;
+}
+
+.preview {
+  height: 160px;
+}
+
+.software {
+  color: rgb(187, 187, 187);
+}
+
+.project h3{
+  color: black;
+}
+
+.project p{
+  color: rgb(54, 54, 54);
+}
+
+@media screen and (max-width: 1192px) {
+  :root {
+    --pad-sides: 164px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  :root {
+    --pad-sides: 128px;
+  }
+
+  .list{
+    flex-direction: column;
+  }
+
+  .divide{
+    flex-direction: column;
+  }
+
+  .preview{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    height: unset;
+  }
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  :root {
+    --pad-sides: 16px;;
+  }
+
+  .container{
+    padding: 8px 16px;
+  }
+
+  .divide{
+    padding: 32px 0;
+  }
+
+  .divide h3{
+    padding: 24px;
+    font-size: 32px;
+  }
+
+  .lg{
+    min-height: 30vh !important;
+    padding: 32px var(--pad-sides) !important;
+  }
+
+  .list{
+    padding: 0;
+  }
+
+  h2{
+    font-size: 48px;
+    line-height: 1;
+  }
+
+  .split img {
+    height: unset;
+    max-width: 100%;
+    padding: 64px 0;
+  }
+  
+}
+
+
